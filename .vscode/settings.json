@@ -1,0 +1,9 @@
+{
+  // Ignore unknown at-rules like @tailwind which the CSS linter doesn't recognize
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+
+  // Optional: ensure the editor uses the workspace's node version for intellisense
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
