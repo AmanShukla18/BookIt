@@ -48,8 +48,6 @@ const Sidebar: React.FC<{ open: boolean; onClose: () => void }> = ({ open, onClo
           <Link href="/result" className="block px-3 py-2 rounded hover:bg-gray-100">Result</Link>
           <Link href="/account" className="block px-3 py-2 rounded hover:bg-gray-100">Account</Link>
           <Link href="/settings" className="block px-3 py-2 rounded hover:bg-gray-100">Settings</Link>
-          <Link href="/signin" className="block px-3 py-2 rounded hover:bg-gray-100">Sign In</Link>
-          <Link href="/signup" className="block px-3 py-2 rounded hover:bg-gray-100">Sign Up</Link>
           <Link href="/forgot-password" className="block px-3 py-2 rounded hover:bg-gray-100">Forgot Password</Link>
         </nav>
 

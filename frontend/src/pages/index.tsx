@@ -16,8 +16,11 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+
+    const baseURL =
+    process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:4000";
     axios
-      .get('/api/experiences')
+      .get(`${baseURL}/experiences`)
       .then((r) => setItems(r.data))
       .catch((e) => {
         console.error('Failed to load experiences', e?.response || e.message || e);
