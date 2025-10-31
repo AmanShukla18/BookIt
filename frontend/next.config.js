@@ -4,14 +4,13 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:5000/:path*',
+        destination: process.env.NEXT_PUBLIC_API_BASE_URL + '/api/:path*',
       },
     ];
   },
-  // Add retry mechanism for API requests
   experimental: {
-    proxyTimeout: 30000, // 30 seconds
-  }
+    proxyTimeout: 30000, 
+  },
 };
 
 module.exports = nextConfig;
