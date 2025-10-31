@@ -12,7 +12,7 @@ export default function ExperiencePage() {
   useEffect(() => {
     if (!id) return;
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/experiences/${id}`)
+      .get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/experiences/${id}`)
       .then((r) => setData(r.data))
       .catch(console.error);
   }, [id]);
